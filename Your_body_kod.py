@@ -12,8 +12,8 @@ def start():
 
 with open("savegame", "rb") as f:
     save = pickle.load(f)
-main = foo[0]
-strona = foo[1]
+main = save[0]
+strona = save[1]
 okno_start = pygame.image.load('main.png')
 okno_start = pygame.transform.scale(okno_start, main)
 okno = pygame.display.set_mode(main, DOUBLEBUF)
